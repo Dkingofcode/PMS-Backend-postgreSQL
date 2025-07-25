@@ -16,11 +16,11 @@ allowNull: false,
 },
 firstName: {
 type: DataTypes.STRING,
-allowNull: false,
+allowNull: true,
 },
 lastName: {
 type: DataTypes.STRING,
-allowNull: false,
+allowNull: true,
 },
 email: {
 type: DataTypes.STRING,
@@ -30,22 +30,22 @@ isEmail: true,
 },
 phone: {
 type: DataTypes.STRING,
-allowNull: false,
+allowNull: true,
 },
 dateOfBirth: {
 type: DataTypes.DATEONLY,
-allowNull: false,
+allowNull: true,
 },
 gender: {
 type: DataTypes.ENUM('male', 'female', 'other'),
-allowNull: false,
+allowNull: true,
 },
 address: {
 type: DataTypes.TEXT,
 },
 category: {
 type: DataTypes.ENUM('walk_in', 'referred', 'doctor_referral', 'corporate', 'hospital', 'hmo'),
-allowNull: false,
+allowNull: true,
 },
 referredBy: {
 type: DataTypes.STRING,
